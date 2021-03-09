@@ -13,3 +13,6 @@ Code review
 - is t limited to {1, 2, 3, 4} or can it be bigger?
 - there are no validations for t, s and perioada
 
+3. Single responsability & KISS
+- outsource the intermediary operations into new simple functions
+
