@@ -15,6 +15,8 @@ public class TestFactoryMethod {
 		if (kidsMode) {
 			abstractFactory = new WaterWeaponsFactory();
 		}
+		else abstractFactory = new RealWeaponsFactory(); 
+			
 		AbstractWeapon bazooka = abstractFactory.getWeapon(WeaponType.BAZOOKA, "BOOM");
 		superman.setWeapon(bazooka);
 		superman.setWeapon(abstractFactory.getWeapon(WeaponType.MACHINE_GUN, "MG"));
