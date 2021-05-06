@@ -9,23 +9,20 @@ public class FantasySuperHero extends SuperHeroCharacter {
 		this.canFly = canFly;
 	}
 
-	
 	@Override
 	public void move() {
-		if(this.canFly) {
+		if (this.canFly) {
 			System.out.println("is flying");
-		}
-		else {
+		} else {
 			System.out.println("is moving fast");
 		}
 	}
 
 	@Override
 	public void crouch() {
-		if(this.canFly) {
+		if (this.canFly) {
 			System.out.println("Not able to crouch");
-		}
-		else {
+		} else {
 			System.out.println("is getting close to the ground");
 		}
 	}
@@ -41,5 +38,5 @@ public class FantasySuperHero extends SuperHeroCharacter {
 		System.out.println(String.format("%s is healing %d points", name, points));
 		this.power += points;
 	}
-	
+
 }

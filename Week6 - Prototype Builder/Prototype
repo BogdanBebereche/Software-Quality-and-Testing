@@ -1,0 +1,8 @@
+Web proctoring system
+
+Advantages:
+- Can create new object without verifying ID again
+- objects are created quickly
+
+Disadvantages:
+- should be careful with shallow copy

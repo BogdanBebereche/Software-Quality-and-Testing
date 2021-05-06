@@ -21,35 +21,28 @@ public class Char3DModel implements Cloneable {
 			for (int i = 0; i < 20; i++) {
 				graphicPoints.add(random.nextInt(1000));
 			}
-			
+
 			System.out.println("Model loaded.");
-			
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
 
-	
-	
 	private Char3DModel() {
-		
+
 	}
-
-
 
 	@Override
 	public Object clone() throws CloneNotSupportedException {
-		//Char3DModel copy = Char3DModel(this.type, this.color);
+		// Char3DModel copy = Char3DModel(this.type, this.color);
 		Char3DModel copy = new Char3DModel();
 		copy.type = this.type;
 		copy.color = this.color;
 		copy.graphicPoints = (ArrayList<Integer>) this.graphicPoints.clone();
-		
+
 		return copy;
-		
+
 	}
 
-
-
-	
 }
