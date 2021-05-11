@@ -9,9 +9,7 @@ public class WoundedDecorator extends AbstractDecorator {
 	@Override
 	public void move() {
 		System.out.println("The hero is barely moving because he's wounded");
-		//super.move();
+		// super.move();
 	}
 
-	
-	
 }

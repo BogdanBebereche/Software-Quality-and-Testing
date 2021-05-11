@@ -1,9 +1,0 @@
-Web proctoring system
-
-Advantages:
-- can create new objects at runtime
-- transparent to the user
-
-Disadvantages:
-- It's just a wrapper
-- objects are very similar
