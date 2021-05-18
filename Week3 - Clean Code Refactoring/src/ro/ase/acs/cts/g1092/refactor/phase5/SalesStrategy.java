@@ -22,7 +22,7 @@ public class SalesStrategy {
 	//optional - Depends on your design specs
 	//allowing the change at runtime of the marketing strategy
 	
-	void setMarketingStrategy(MarketingStrategyInterface mkStrategy) {
+	public void setMarketingStrategy(MarketingStrategyInterface mkStrategy) {
 		if(mkStrategy == null) {
 			throw new NullPointerException();
 		}
